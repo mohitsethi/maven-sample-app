@@ -6,5 +6,5 @@ RUN apt-get install maven -y
 
 COPY . /app
 WORKDIR /app
-RUN maven clean install
+RUN mvn clean install
 
