@@ -5,6 +5,6 @@ RUN apt-get update -y
 RUN apt-get install maven -y
 
 COPY . /app
-CWD /app
+WORKDIR /app
 RUN maven clean install
 
