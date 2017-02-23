@@ -7,4 +7,4 @@ RUN apt-get install maven -y
 COPY . /app
 WORKDIR /app
 RUN mvn clean install
-
+ENTRYPOINT ["mvn tomcat:run"]
